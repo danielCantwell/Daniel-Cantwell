@@ -1,5 +1,6 @@
 <section tri>
 	<h1>Triathlete</h1>
+	<h2>{{ racecount }} races</h2>
 	<ul ng-repeat="(racename, racevalue) in races | orderBy : '-date' | groupBy:'name' | toArray: true">
 		<a>{{ racevalue[0].name }}</a>
 		<section>

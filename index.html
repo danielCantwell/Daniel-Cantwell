@@ -17,20 +17,18 @@
 	<body ng-controller="controller">
 
 		<header>
-			<input type="image" src="assets/menu.png">
+			<input type="image" src="assets/menu.png" ng-click="toggleMenu()">
 			<h1>Daniel Cantwell</h1>
 			<hr>
-			<!-- <ul>
-				<li>About</li>
-				<li>Triathlon</li>
-				<li>Work</li>
-				<li>Contact</li>
-			</ul> -->
+			<ul id="menu" class="hidden">
+				<li><a href="#about">About</a></li>
+				<li><a href="#tri">Triathlon</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 		</header>
-		
 
 		<section ng-view></section>
-
 
 		<!-- Scripts -->
 		<script src="libs/angular.min.js"></script>

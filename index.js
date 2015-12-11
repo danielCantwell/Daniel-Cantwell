@@ -10,6 +10,12 @@ app.config(function($routeProvider) {
         .when('/tri', {
             templateUrl: 'views/tri.html'
         })
+        .when('/work', {
+            templateUrl: 'views/work.html'
+        })
+        .when('/contact', {
+            templateUrl: 'views/contact.html'
+        })
         .otherwise({
             redirectTo: '/about'
         });
@@ -31,8 +37,34 @@ app.controller('controller', function ($scope, $firebase, $firebaseObject, $fire
 
     // racesRef.push(r1); 
 
+    // racesRef.on("value", function(snapshot) {
+    //     console.log(snapshot.val());
+    //     $scope.races = snapshot.val();
+    //     $scope.racecount = $scope.races.length;
+    // });
 
     $scope.races = $firebaseArray(racesRef);
+    $scope.races.$loaded().then(function(races) {
+        $scope.racecount = races.length;
+    });
+    
+
+    $scope.toggleMenu = function() {
+        // $('#menu').toggle();
+        // if $('#menu').hasClass('hidden') {
+
+        // }
+        $('#menu').toggleClass('hidden');
+        $('#menu').toggleClass('open');
+
+        // var isOpen = $('#menu').classList.contains('open');
+
+        // $('#menu').setAttribute('class', isOpen ? 'hidden' : 'open');
+    }
+
+    $('#menu').on('click', 'a', function() {
+        $scope.toggleMenu();
+    });
 
     // $(document).ready(function(){
     //     $('#racelist').on('click', 'a', function() {
