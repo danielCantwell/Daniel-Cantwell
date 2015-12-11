@@ -181,6 +181,7 @@ header > ul li {
     font-size: 64px;
     margin-top: 10px;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 [work] section {
@@ -190,12 +191,17 @@ header > ul li {
     padding-right: 40px;
 }
 
-[work] section ul li {
+[work] ul {
     display: inline-block;
-    width: 49.8%;
+    float: right;
 }
 
-[work] section img {
+[work] ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+[work] img {
     width: 80px;
     display: block;
 
