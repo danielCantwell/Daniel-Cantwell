@@ -1,0 +1,26 @@
+<section tri>
+	<h1>Triathlete</h1>
+	<ul ng-repeat="(racename, racevalue) in races | orderBy : '-date' | groupBy:'name' | toArray: true">
+		<a>{{ racevalue[0].name }}</a>
+		<section>
+			<ul ng-repeat="race in racevalue | orderBy : ['-date']">
+				<li class="col-9">{{ race.date }}</li>
+				<li class="col-2">{{ race.overall }}</li>
+				<section>
+					<li class="col-3">S: {{ race.swim }}</li>
+					<li class="col-3">B: {{ race.bike }}</li>
+					<li class="col-3">R: {{ race.run }}</li>
+				</section>
+			</ul>
+		</section>
+	</ul>
+	<!-- <ul ng-repeat="race in races | orderBy : ['name', '-date']">
+		<li class="col-9">{{ race.date }} {{ race.name }} </li>
+		<li class="col-2">{{ race.overall }}</li>
+		<section>
+			<li class="col-3">S: {{ race.swim }}</li>
+			<li class="col-3">B: {{ race.bike }}</li>
+			<li class="col-3">R: {{ race.run }}</li>
+		</section>
+	</ul> -->
+</section>

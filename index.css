@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+    background-color: #2A2A2A;
+}
+
+header {
+    min-height: 6%;
+    height: 6%;
+    background-color: #2A2A2A;
+    color: white;
+}
+
+header > input {
+    display: inline-block;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+header > h1 {
+    display: inline-block;
+    float: right;
+    line-height: 100%;
+    text-align: center;
+    color: #00ffcd;
+    font-size: 80px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+header > hr {
+    background-color: #00ffcd;
+    color: #00ffcd;
+    height: 1px;
+    border: none;
+}
+
+header > ul {
+    background-color: #00ffcd;
+    margin-top: -8px;
+    color: #2A2A2A;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+}
+
+header > ul li {
+    padding: 20px;
+}
+
+[ng-view] {
+    min-height: 94%;
+    height: 94%;
+}
+
+/**************************************
+                ABOUT
+/**************************************/
+
+[about] {
+    min-height: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+[about] section {
+    min-height: 25%;
+    height: 25%;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+[about] h1 {
+    color: yellow;
+    text-align: center;
+    font-size: 64px;
+}
+
+[about] article {
+    color: #DADADA;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+/**************************************
+                TRI
+/**************************************/
+
+[tri] {
+    min-height: 100%;
+    /*width: 100%;*/
+    height: 100%;
+    padding: 20px;
+}
+
+[tri] > h1 {
+    color: yellow;
+    font-size: 64px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+[tri] > ul {
+    color: #DADADA;
+    font-size: 36px;
+}
+
+[tri] > ul a {
+    font-size: 50px;
+    color: white;
+}
+
+[tri] > ul li {
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 300;
+}
+
+[tri] > ul section {
+    width: 90%;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+[tri] > ul section li {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+/**************************************
+                OTHER
+/**************************************/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+
+}
