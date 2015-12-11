@@ -16,6 +16,9 @@ app.config(function($routeProvider) {
         .when('/contact', {
             templateUrl: 'views/contact.html'
         })
+        .when('/resume', {
+            templateUrl: 'views/resume.html'
+        })
         .otherwise({
             redirectTo: '/about'
         });
