@@ -283,7 +283,7 @@ header > ul li {
 }
 
 /* Desktop */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
     .mobile-only {
         display: none;
