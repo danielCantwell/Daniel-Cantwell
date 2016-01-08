@@ -3,7 +3,7 @@
 	<h2>{{ racecount }} races</h2>
 	<ul ng-repeat="(racename, racevalue) in races | orderBy : '-date' | groupBy:'name' | toArray: true">
 		<a>{{ racevalue[0].name }}</a>
-		<section>
+		<section class="mobile-only">
 			<ul ng-repeat="race in racevalue | orderBy : ['-date']">
 				<li class="col-9">{{ race.date }}</li>
 				<li class="col-2">{{ race.overall }}</li>
@@ -12,6 +12,15 @@
 					<li class="col-3">B: {{ race.bike }}</li>
 					<li class="col-3">R: {{ race.run }}</li>
 				</section>
+			</ul>
+		</section>
+		<section class="desktop-only">
+			<ul ng-repeat="race in racevalue | orderBy : ['-date']">
+				<li class="col-2">{{ race.date }}</li>
+				<li class="col-2">{{ race.overall }}</li>
+				<li class="col-2">S: {{ race.swim }}</li>
+				<li class="col-2">B: {{ race.bike }}</li>
+				<li class="col-2">R: {{ race.run }}</li>
 			</ul>
 		</section>
 	</ul>
