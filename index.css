@@ -131,13 +131,13 @@ header > ul li {
     margin-bottom: 30px;
 }
 
-[tri] > h2 {
+[tri] > a {
     display: inline-block;
     color: yellow;
     float: right;
     margin-right: 20px;
     margin-top: 20px;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 [tri] > ul {
@@ -250,6 +250,49 @@ header > ul li {
     font-size: 50px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+/**************************************
+                ADD RACE
+/**************************************/
+
+[addrace] {
+    min-height: 100%;
+    /*width: 100%;*/
+    height: 100%;
+}
+
+[addrace] > form {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+}
+
+[addrace] > form > input,
+[addrace] > form > button {
+    display: block;
+    margin-top: 80px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #00ffcd;
+    border-width: 0px 0px 1px 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+[addrace] > form > button {
+    background-color: #00ffcd;
+    color: #2A2A2A;
+    height: 100px;
+    border-radius: 5px;
+    width: 40%;
+    cursor: pointer;
 }
 
 /**************************************
@@ -412,5 +455,23 @@ header > ul li {
         margin-top: 10px;
         font-size: 28px;
         margin-bottom: 20px;
+    }
+
+    /***************************/
+
+    [addrace] > form > input,
+    [addrace] > form > button {
+        margin-top: 40px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        width: 50%;
+        border-radius: 0px;
+    }
+
+    [addrace] > form > button {
+        height: 40px;
+        width: 20%;
+        border-radius: 5px;
     }
 }
