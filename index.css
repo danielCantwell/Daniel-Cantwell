@@ -38,7 +38,7 @@ header > h1 {
 header > hr {
     background-color: #00ffcd;
     color: #00ffcd;
-    height: 1px;
+    height: 2px;
     border: none;
 }
 
@@ -186,11 +186,17 @@ header > ul li {
     display: inline-block;
 }
 
-[work] section {
+[work] > section {
     min-height: 25%;
     margin-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0px 20px;
+}
+
+[work] > section > section {
+    padding: 10px 20px;
+    background-color: #343434;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 [work] ul {
@@ -219,6 +225,11 @@ header > ul li {
     font-size: 64px;
 }
 
+[work] a {
+    border: 1px solid yellow;
+    border-width: 0px 0px 1px 0px;
+}
+
 [work] a,
 [work] h3 {
     color: yellow;
@@ -228,10 +239,11 @@ header > ul li {
 
 
 [work] article {
-    color: #DADADA;
+    color: white;
     text-align: justify;
     margin-top: 20px;
     font-size: 44px;
+    margin-bottom: 20px;
 }
 
 /**************************************
@@ -337,18 +349,18 @@ header > ul li {
     }
 
     header > h1 {
-        font-size: 60px;
+        font-size: 50px;
         margin-left: 20px;
         margin-top: 10px;
     }
 
     header > input {
-        height: 50px;
+        height: 40px;
         margin-top: 15px;
     }
 
     header > ul {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     header > ul li {
@@ -358,7 +370,7 @@ header > ul li {
 
     header > #menu.open {
         visibility: visible;
-        height: 75px;
+        height: 55px;
     }
 
     /***************************/
@@ -414,10 +426,10 @@ header > ul li {
 
     [work] > h1 {
         font-size: 40px;
-        margin-bottom: 0px;
+        margin-bottom: -10px;
     }
 
-    [work] section {
+    [work] > section {
         height: auto;
     }
 
@@ -441,20 +453,20 @@ header > ul li {
 
     [work] a {
         border-bottom: 1px solid yellow;
-        font-size: 30px;
+        font-size: 28px;
         /*line-height: 50px;*/
     }
 
     [work] h3 {
-        font-size: 30px;
-        margin-top: 20px;
+        font-size: 28px;
+        margin-top: 0px;
     }
 
 
     [work] article {
         margin-top: 10px;
-        font-size: 28px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 5px;
     }
 
     /***************************/
