@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Online Spreadsheet</title>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1 id="header">Online Spreedsheet</h1>
+		</header>
+
+		<section id="widgets">
+			<section>
+				<input type="button" id="clear-table-button" value="Clear Table">
+			</section>
+			<section>
+				<input type="text" id="load-data-key" placeholder="Key to Load">
+				<input type="button" id="load-data-button" value="Load">
+			</section>
+			<section>
+				<input type="text" id="save-data-key" placeholder="Key to Save">
+				<input type="button" id="save-data-button" value="Save">
+			</section>
+		</section>
+
+		<table id="spreadsheet">
+		</table>
+
+
+		<!-- Scripts -->
+		<script src="jquery-2.1.4.min.js"></script>
+		<script src="index.js"></script>
+		<script src="formula-cells.js"></script>
+		<script src="arrow-navigation.js"></script>
+		<script src="multi-cell-selection.js"></script>
+
+	</body>
+</html>
