@@ -197,7 +197,7 @@ header > ul li {
 [work] > section > section {
     padding: 10px 20px;
     background-color: #343434;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-top: 20px;
 }
 
@@ -433,6 +433,9 @@ header > ul li {
 
     [work] > section {
         height: auto;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     [work] ul li {
@@ -456,7 +459,6 @@ header > ul li {
     [work] a {
         border-bottom: 1px solid yellow;
         font-size: 28px;
-        /*line-height: 50px;*/
     }
 
     [work] h3 {
